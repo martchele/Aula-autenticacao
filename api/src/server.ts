@@ -4,8 +4,8 @@ import { router } from './router';
 
 const server = express();
 
-server.use(router);
 server.use(express.json());
 server.use(cors());
+server.use(router);
 
 export { server }
