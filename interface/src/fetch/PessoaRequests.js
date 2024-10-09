@@ -1,5 +1,4 @@
 class PessoaRequests {
-
     constructor() {
         this.serverUrl = 'http://localhost:3333';
         this.routeListarPessoas = '/pessoas';
@@ -16,7 +15,7 @@ class PessoaRequests {
                 }
             });
 
-            if(!response.ok) {
+            if (!response.ok) {
                 throw new Error('Não foi possível listar as pessoas.');
             }
 
